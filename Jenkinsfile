@@ -16,7 +16,7 @@ node {
 
         stage('Test') {
             echo "Running unit tests..."
-            bat "${tool 'M3'}\\bin\\mvn test"
+            bat "${tool 'm3'}\\bin\\mvn test"
             junit '**/target/surefire-reports/*.xml'
         }
 
