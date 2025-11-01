@@ -11,7 +11,7 @@ node {
 
         stage('Build') {
             echo "Building the project using Maven..."
-            bat "${tool 'M3'}\\bin\\mvn clean package -DskipTests=false"
+            bat "${tool 'm3'}\\bin\\mvn clean package -DskipTests=false"
         }
 
         stage('Test') {
